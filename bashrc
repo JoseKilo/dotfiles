@@ -11,6 +11,8 @@ alias nvmactivate='. /home/jose/.nvm/nvm.sh'
 alias cleanvms='for i in `vboxmanage list vms | cut -d "{" -f 2 | cut -d "}" -f 1`; do vboxmanage controlvm "$i" poweroff; vboxmanage unregistervm "$i" --delete; done && rm -Rf /home/jose/VirtualBox\ VMs/*'
 alias is='isort -rc -s */*/migrations/*.py rbx tests'
 alias clipboard='xclip -sel clip'
+alias cscp='rsync --partial --progress --rsh=ssh'
+alias shrug='echo "¯\_(ツ)_/¯"'
 
 # nvmactivate
 # nvm use v0.10.33 > /dev/null
