@@ -193,7 +193,7 @@
 	</keybind>
 	<keybind key="W-t">
 	     <action name="Execute">
-	       <command>x-terminal-emulator -e tmux</command>
+	       <command>x-terminal-emulator -e tmux -2</command>
 	     </action>
 	</keybind>
 	<keybind key="W-F7">
