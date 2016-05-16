@@ -1,4 +1,5 @@
 alias v='source .venv/bin/activate'
+alias vv='source ../.venv/bin/activate'
 alias w='cd ~/workspace/rbx_warehouse_manager/'
 alias r='python manage.py runserver'
 alias t='python manage.py test --settings=rbx.settings.test'
