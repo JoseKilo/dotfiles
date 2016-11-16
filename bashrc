@@ -56,3 +56,7 @@ function cd_and_auto_activate() {
 }
 alias cd='cd_and_auto_activate'
 auto_activate
+
+if [ -f ~/.local_bashrc ]; then
+  . ~/.local_bashrc
+fi
