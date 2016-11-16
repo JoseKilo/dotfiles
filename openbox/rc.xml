@@ -196,6 +196,11 @@
 	       <command>x-terminal-emulator -e tmux -2</command>
 	     </action>
 	</keybind>
+	<keybind key="W-y">
+	     <action name="Execute">
+	       <command>x-terminal-emulator -e 'tmux -2 -c vim'</command>
+	     </action>
+	</keybind>
 	<keybind key="W-F7">
 	     <action name="Execute">
 	       <command>xbacklight +10</command>
