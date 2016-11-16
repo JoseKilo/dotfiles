@@ -1,6 +1,5 @@
 alias v='source .venv/bin/activate'
 alias vv='source ../.venv/bin/activate'
-alias w='cd ~/workspace/rbx_warehouse_manager/'
 alias r='python manage.py runserver'
 alias t='python manage.py test --settings=rbx.settings.test'
 alias tt='python manage.py test --settings=rbx.settings.integration_tests --noinput'
@@ -14,6 +13,8 @@ alias is='isort -rc -s */*/migrations/*.py rbx tests'
 alias clipboard='xclip -sel clip'
 alias cscp='rsync --partial --progress --rsh=ssh'
 alias shrug='echo "¯\_(ツ)_/¯"'
+
+setxkbmap -option caps:escape
 
 # nvmactivate
 # nvm use v0.10.33 > /dev/null
