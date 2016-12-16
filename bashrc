@@ -13,6 +13,7 @@ alias is='isort -rc -s */*/migrations/*.py rbx tests'
 alias clipboard='xclip -sel clip'
 alias cscp='rsync --partial --progress --rsh=ssh'
 alias shrug='echo "¯\_(ツ)_/¯"'
+alias sizes='dpkg-query -W --showformat="\${Installed-Size;10}\t\${Package}\n" | sort -k1,1n'
 
 setxkbmap -option caps:escape
 
