@@ -61,3 +61,5 @@ auto_activate
 if [ -f ~/.local_bashrc ]; then
   . ~/.local_bashrc
 fi
+
+export HISTSIZE=100000
