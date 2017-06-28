@@ -62,4 +62,15 @@ if [ -f ~/.local_bashrc ]; then
   . ~/.local_bashrc
 fi
 
-export HISTSIZE=100000
+bind "set completion-ignore-case on"
+bind "set completion-map-case on"  # Treat hyphens and underscores as equivalent
+bind "set show-all-if-ambiguous on"
+bind "set mark-symlinked-directories on"
+
+shopt -s histappend
+shopt -s cmdhist
+
+PROMPT_COMMAND='history -a'
+HISTSIZE=500000
+HISTFILESIZE=100000
+HISTCONTROL="erasedups:ignoreboth"
