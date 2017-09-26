@@ -1,0 +1,24 @@
+[global_config]
+  title_transmit_fg_color = "#c4a000"
+  window_state = maximise
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_darkness = 0.8
+    background_image = None
+    background_type = transparent
+    font = Ubuntu Mono 14
+    foreground_color = "#c4a000"
+    show_titlebar = False
+    urgent_bell = True
+    use_system_font = False
+    word_chars = '=,./?%&#:_A-Za-z0-9-'
