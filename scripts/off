@@ -1,0 +1,6 @@
+#!/bin/bash
+
+lights-off
+sleep $((60*$1))
+mpv /usr/share/sounds/purple/logout.wav
+lights-off

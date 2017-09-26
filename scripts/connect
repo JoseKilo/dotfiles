@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# sudo rmmod rtl8192se
+# sleep 1
+# sudo modprobe rtl8192se
+# sudo /etc/init.d/network-manager stop 2> /dev/null
+echo "Stoping ..."
+sudo /etc/init.d/networking stop
+sudo ifconfig wlan0 down
+sudo killall wpa_supplicant 2> /dev/null
+sudo killall dhclient 2> /dev/null
+sleep 1
+echo "wpa_supplicant ..."
+sudo wpa_supplicant -Dwext -B -i wlan0 -c /etc/wpa_supplicant_$1.conf 2> /dev/null
+echo "Waiting on syslog ..."
+grep -q 'wlan0: associated' <(sudo tail -n 0 -f /var/log/syslog | tee /dev/tty)
+echo "dhclient ..."
+sudo dhclient wlan0

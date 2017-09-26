@@ -1,0 +1,2 @@
+#!/bin/bash
+if [ `xbacklight -get | cut -b -3` == 0.0 ]; then xbacklight -set 100; else xbacklight -set 0; fi
