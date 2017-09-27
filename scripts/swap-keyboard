@@ -1,0 +1,13 @@
+#!/bin/bash
+
+lang=$(setxkbmap -query | grep layout | sed 's/layout.* //g')
+
+if [[ $lang == "gb" ]]
+then
+	setxkbmap -layout "es"
+	notify-send 'Spanish' -t 800 -i notification-keyboard-brightness-full -h string:x-canonical-private-synchronous:anything
+elif [[ $lang == "es" ]]
+then
+	setxkbmap -layout "gb"
+	notify-send 'UK English' -t 800 -i notification-keyboard-brightness-full -h string:x-canonical-private-synchronous:anything
+fi

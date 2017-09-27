@@ -2,5 +2,5 @@
 
 lights-off
 sleep $((60*$1))
-mpv /usr/share/sounds/purple/logout.wav
+mpv /usr/share/sounds/ubuntu/stereo/desktop-logout.ogg
 lights-off
