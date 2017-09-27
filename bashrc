@@ -80,7 +80,7 @@ function auto_activate() {
 }
 
 function cd_and_auto_activate() {
-    cd $*
+    cd "$*"
     auto_activate
 }
 alias cd='cd_and_auto_activate'
