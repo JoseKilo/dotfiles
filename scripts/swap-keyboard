@@ -1,6 +1,6 @@
 #!/bin/bash
 
-lang=$(setxkbmap -query | grep layout | sed 's/layout.* //g')
+lang=$(setxkbmap -query | grep layout | sed 's/layout.* //g;s/,.*//g')
 
 if [[ $lang == "gb" ]]
 then
