@@ -211,6 +211,21 @@
 	       <command>xbacklight -10</command>
 	     </action>
 	</keybind>
+    <keybind key="XF86MonBrightnessUp">
+         <action name="Execute">
+           <command>xbacklight +10</command>
+         </action>
+    </keybind>
+    <keybind key="XF86MonBrightnessDown">
+         <action name="Execute">
+           <command>xbacklight -10</command>
+         </action>
+    </keybind>
+	<keybind key="C-space">
+	     <action name="Execute">
+	       <command>swap-keyboard</command>
+	     </action>
+	</keybind>
 	<keybind key="W-F5">
 	     <action name="Execute">
 	       <command>lights-off</command>
@@ -236,6 +251,36 @@
 		<command>amixer -D pulse set Master Playback Switch toggle</command>
 	    </action>
 	</keybind>
+	<keybind key="XF86AudioRaiseVolume">
+		<action name="Execute">
+			<command>volume up</command>
+		</action>
+	</keybind>
+	<keybind key="XF86AudioLowerVolume">
+		<action name="Execute">
+			<command>volume down</command>
+		</action>
+	</keybind>
+	<keybind key="XF86AudioMute">
+		<action name="Execute">
+			<command>volume toggle</command>
+		</action>
+	</keybind>
+    <keybind key="XF86AudioPlay">
+        <action name="Execute">
+            <command>play-mpv.sh</command>
+        </action>
+    </keybind>
+    <keybind key="XF86AudioPrev">
+        <action name="Execute">
+            <command>prev-mpv.sh</command>
+        </action>
+    </keybind>
+    <keybind key="XF86AudioNext">
+        <action name="Execute">
+            <command>next-mpv.sh</command>
+        </action>
+    </keybind>
     <!-- Keybindings for desktop switching -->
     <keybind key="C-A-Left">
       <action name="GoToDesktop">
@@ -346,8 +391,8 @@
         <menu>client-menu</menu>
       </action>
     </keybind>
-    <!-- Take a screenshot of the current window with gnome-screenshot when Alt+Print are pressed -->
-    <keybind key="W-F12">
+    <!-- Take a screenshot of the current window with gnome-screenshot -->
+    <keybind key="XF86Search ">
       <action name="Execute">
         <command>gnome-screenshot -w</command>
       </action>
