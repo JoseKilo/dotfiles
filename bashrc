@@ -9,7 +9,7 @@ alias movil='sudo mtpfs -o allow_other /mnt/h2/'
 alias pyc='find . -iname "*.pyc" -delete'
 alias f='./env/bin/flake8 --max-line-length=115 --exclude=doc,env,static,media,migrations,.ropeproject,*_trash */ && echo OK !'
 alias cleanbranch='git fetch origin -p; git checkout master; git reset --hard origin/master'
-alias nvmactivate='. /home/jose/.nvm/nvm.sh; nvm use v0.12.7'
+alias nvmactivate='. ~/.nvm/nvm.sh; nvm use default'
 alias cleanvms='for i in `vboxmanage list vms | cut -d "{" -f 2 | cut -d "}" -f 1`; do vboxmanage controlvm "$i" poweroff; vboxmanage unregistervm "$i" --delete; done && rm -Rf /home/jose/VirtualBox\ VMs/*'
 alias is='isort -rc -s */*/migrations/*.py rbx tests'
 alias clipboard='xclip -sel clip'
@@ -33,9 +33,6 @@ alias l='ls -CF'
 
 setxkbmap -layout "gb,es"
 setxkbmap -option caps:escape
-
-# nvmactivate
-# nvm use v0.10.33 > /dev/null
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
@@ -113,6 +110,7 @@ tox() {
 
 export NVM_DIR="/home/merlin/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 shopt -s histappend
 shopt -s cmdhist
