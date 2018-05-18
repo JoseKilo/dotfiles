@@ -1,4 +1,4 @@
-alias v='if [[ -f .venv/bin/activate ]]; then . .venv/bin/activate; elif [[ -f .tox/py27/bin/activate ]]; then . .tox/py27/bin/activate; fi'
+alias v='if [[ -f .venv/bin/activate ]]; then . .venv/bin/activate; elif [[ -f .tox/py36/bin/activate ]]; then . .tox/py36/bin/activate; fi'
 alias r='python manage.py runserver'
 alias t='python manage.py test'
 alias s='python manage.py shell'
