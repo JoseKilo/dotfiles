@@ -177,17 +177,27 @@
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
   <keyboard>
-	<keybind key="W-p">
-	     <action name="Execute">
-	       <command>pidgin</command>
-	     </action>
-	</keybind>
 	<keybind key="W-b">
 	     <action name="Execute">
-	       <command>x-www-browser</command>
+	       <command>firefox -P default</command>
 	     </action>
 	</keybind>
-    <chainQuitKey>C-g</chainQuitKey>
+	<keybind key="W-v">
+	     <action name="Execute">
+	       <command>firefox-esr -P esr 'https://mail.google.com'</command>
+	     </action>
+	</keybind>
+	<keybind key="W-p">
+	     <action name="Execute">
+	       <command>keepassx</command>
+	     </action>
+	</keybind>
+	<keybind key="W-k">
+	     <action name="Execute">
+	       <command>sh -c 'if [ $(xinput list-props 12 | grep "Device Enabled" | cut -d ":" -f 2-) -eq 0  ]; then xinput enable 12; else xinput disable 12; fi'</command>
+	     </action>
+	</keybind>
+  <chainQuitKey>C-g</chainQuitKey>
 	<keybind key="W-r">
         <action name="ToggleMaximize"/>
 	</keybind>
@@ -199,6 +209,16 @@
 	<keybind key="W-y">
 	     <action name="Execute">
 	       <command>terminator -e 'tmux -2 -c vim'</command>
+	     </action>
+	</keybind>
+	<keybind key="W-S-t">
+	     <action name="Execute">
+         <command>~/workspace/cool-retro-term/cool-retro-term --fullscreen --profile MINE --verbose -e tmux -2</command>
+	     </action>
+	</keybind>
+	<keybind key="W-Delete">
+	     <action name="Execute">
+         <command>gnome-screensaver-command -l</command>
 	     </action>
 	</keybind>
 	<keybind key="W-F7">
