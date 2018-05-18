@@ -71,7 +71,7 @@ function auto_activate() {
         . .venv/bin/activate
     elif [ -d .tox  ]
     then
-        . .tox/py27/bin/activate
+        . .tox/py36/bin/activate
     elif [ $VIRTUAL_ENV ]
     then
         deactivate
