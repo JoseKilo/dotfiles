@@ -4,4 +4,7 @@
 
 (sleep 1s && nitrogen --restore) &
 (sleep 1s && tint2) &
+(sleep 1s && xcompmgr) &
 (sleep 1s && volumeicon) &
+(sleep 1s && keepassx) &
+(sleep 1s && redshift -l 51.509865:-0.118092) &
