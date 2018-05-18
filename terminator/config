@@ -14,11 +14,11 @@
 [profiles]
   [[default]]
     background_darkness = 0.8
-    background_image = None
     background_type = transparent
-    font = Ubuntu Mono 14
+    cursor_color = "#c4a000"
+    font = Hack 12
     foreground_color = "#c4a000"
+    scrollbar_position = hidden
     show_titlebar = False
-    urgent_bell = True
     use_system_font = False
-    word_chars = '=,./?%&#:_A-Za-z0-9-'
+    word_chars = "-=,./?%&#:_A-Za-z0-9-"
