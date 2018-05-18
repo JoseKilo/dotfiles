@@ -106,7 +106,7 @@ mouse_scroll_down = iconify
 
 # Battery
 battery = 1
-battery_low_status = 15
+battery_low_status = 16
 battery_low_cmd = notify-send "battery low" -t 800 -i notification-battery-low -h string:x-canonical-private-synchronous:anything && for i in `seq 0 10 100`; do echo $i ; sleep 1;  done | zenity --progress --auto-close --text="Low battery level. Cancel suspension?" --display=":0" && sudo pm-suspend
 battery_hide = 98
 bat1_font = sans 8
