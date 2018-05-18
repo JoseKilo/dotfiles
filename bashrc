@@ -26,6 +26,7 @@ alias randmp="while true; do ls * | sort -R | tr '\n' '\0' | xargs -0 mpv --no-v
 alias redshift_london='redshift -l 51.509865:-0.118092'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias fixterm="printf '\e[?2004l'"  # printf '\e[?2004h'
+alias mpr='mpv --no-video --loop --shuffle .'
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
