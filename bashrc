@@ -39,6 +39,7 @@ alias l='ls -CF'
 
 setxkbmap -layout "gb,es"
 setxkbmap -option caps:escape
+stty -ixon  # Turn off Ctrl-s and Ctrl-q
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
