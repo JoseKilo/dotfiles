@@ -9,7 +9,7 @@ alias movil='sudo mtpfs -o allow_other /mnt/h2/'
 alias pyc='find . -iname "*.pyc" -delete'
 alias pycache='find . -iname "__pycache__" -exec rm -Rf {} \;'
 alias f='./env/bin/flake8 --max-line-length=115 --exclude=doc,env,static,media,migrations,.ropeproject,*_trash */ && echo OK !'
-alias cleanbranch='git fetch origin -p; git checkout master; git reset --hard origin/master'
+alias cleanmaster='git fetch origin -p; git checkout master; git reset --hard origin/master'
 alias cleandevelop='git fetch origin -p; git checkout develop; git reset --hard origin/develop'
 alias gf='git submodule foreach'
 alias nvmactivate='. ~/.nvm/nvm.sh; nvm use default'
@@ -61,6 +61,12 @@ function stopwatch(){
     echo -ne "$(date -u --date @$((`date +%s` - $date1)) +%H:%M:%S)\r";
     sleep 0.1
    done
+}
+
+function cleanbranch() {
+    git fetch origin -p
+    git checkout ${1:-master}
+    git reset --hard origin/${1:-master}
 }
 
 export PS1="\[\e[0;36m\]\W\[\e[0m\]> "
