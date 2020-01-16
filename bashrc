@@ -36,6 +36,9 @@ alias grep='grep --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias gpgtty='gpg-connect-agent updatestartuptty /bye'
+alias http-server='python -m http.server 4242'
+alias md='pandoc -t plain'
 
 setxkbmap -layout "gb,es"
 setxkbmap -option caps:escape
