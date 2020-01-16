@@ -130,3 +130,7 @@ PROMPT_COMMAND='history -a'
 HISTSIZE=500000
 HISTFILESIZE=100000
 HISTCONTROL="erasedups:ignoreboth"
+
+export GOPATH=~/.go
+export PATH=$PATH:~/workspace/golang/go-go1.12.6/bin/:~/.go/bin/
+
