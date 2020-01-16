@@ -1,0 +1,20 @@
+[user]
+	email = jose.eduardo.gd@gmail.com
+	name = Jose Eduardo
+	signingkey = 0xD13F05FD39134573
+[diff]
+	submodule = log
+; [gpg]
+; 	program = gpg
+; [gpgv]
+; 	program = gpgv
+; [core]
+; 	hooksPath = /home/merlin/.git
+[commit]
+	gpgSign = true
+[tag]
+	forceSignAnnotated = true
+[alias]
+	recommit = !git commit -eF $(git rev-parse --git-dir)/COMMIT_EDITMSG
+[url "git@github.com:"]
+	insteadOf = https://github.com/
