@@ -10,6 +10,7 @@ alias pyc='find . -iname "*.pyc" -delete'
 alias pycache='find . -iname "__pycache__" -exec rm -Rf {} \;'
 alias f='./env/bin/flake8 --max-line-length=115 --exclude=doc,env,static,media,migrations,.ropeproject,*_trash */ && echo OK !'
 alias cleanmaster='git fetch origin -p && git checkout master && git reset --hard origin/master'
+alias cleanmain='git fetch origin -p && git checkout main && git reset --hard origin/main'
 alias cleandevelop='git fetch origin -p && git checkout develop && git reset --hard origin/develop'
 alias gf='git submodule foreach'
 alias nvmactivate='. ~/.nvm/nvm.sh; nvm use default'
@@ -39,6 +40,14 @@ alias l='ls -CF'
 alias gpgtty='gpg-connect-agent updatestartuptty /bye'
 alias http-server='python -m http.server 4242'
 alias md='pandoc -t plain'
+alias k='gpgconf --kill gpg-agent && gpgtty'
+alias shot="scrot '/tmp/%F_%T_$wx$h.png' -s -e 'xclip -selection clipboard -target image/png -i $f'"
+alias play_ocean='play -n -n --combine merge synth pinknoise band -n 1200 1800 tremolo 50 10 tremolo 0.14 70 tremolo 0.2 50 gain  -10'
+alias play_pinknoise='play -c 2 -n synth pinknoise band -n 2500 4000 tremolo 0.03 5 reverb 20 gain'
+alias play_enterprise='play -c2 -n synth whitenoise band -n 100 24 band -n 300 100 gain +20'
+alias whats-app='firefox -P W https://web.whatsapp.com/'
+alias ports='netstat -nputwc 2>&1 | grep '
+alias u='unset HISTFILE'
 
 setxkbmap -layout "gb,es"
 setxkbmap -option caps:escape
