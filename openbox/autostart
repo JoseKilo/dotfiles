@@ -2,6 +2,8 @@
 # nitrogen --restore &
 # tint2 &
 
+export GTK_THEME=Adwaita:dark
+
 (sleep 1s && nitrogen --restore) &
 (sleep 1s && tint2) &
 (sleep 1s && xcompmgr) &

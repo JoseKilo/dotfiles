@@ -135,6 +135,8 @@ shopt -s histappend
 shopt -s cmdhist
 shopt -s checkwinsize
 
+export GTK_THEME=Adwaita:dark
+
 PROMPT_COMMAND='history -a'
 HISTSIZE=500000
 HISTFILESIZE=100000
