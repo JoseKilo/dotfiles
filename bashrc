@@ -142,6 +142,11 @@ HISTSIZE=500000
 HISTFILESIZE=100000
 HISTCONTROL="erasedups:ignoreboth"
 
+if [ $(wc -l ~/.bash_history | cut -d ' ' -f 1) -gt '90000' ]
+then
+    cp -f ~/.bash_history ~/.bash_history.BK
+fi
+
 export GOPATH=~/.go
 export PATH=$PATH:~/workspace/golang/go-go1.12.6/bin/:~/.go/bin/
 
