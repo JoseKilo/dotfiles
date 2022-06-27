@@ -189,7 +189,7 @@
 	</keybind>
 	<keybind key="W-k">
 	     <action name="Execute">
-	       <command>sh -c 'if [ $(xinput list-props 12 | grep "Device Enabled" | cut -d ":" -f 2-) -eq 0  ]; then xinput enable 12; else xinput disable 12; fi'</command>
+	       <command>sh -c 'if [ $(xinput list-props 13 | grep "Device Enabled" | cut -d ":" -f 2-) -eq 0  ]; then xinput enable 13; else xinput disable 13; fi'</command>
 	     </action>
 	</keybind>
   <chainQuitKey>C-g</chainQuitKey>
