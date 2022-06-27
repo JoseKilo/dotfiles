@@ -11,3 +11,4 @@ export GTK_THEME=Adwaita:dark
 (sleep 1s && keepassx) &
 (sleep 1s && blueman-applet) &
 (sleep 1s && redshift -l 51.509865:-0.118092) &
+(sleep 1s && xinput set-prop 13 325 1) &
