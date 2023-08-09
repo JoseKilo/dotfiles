@@ -49,6 +49,9 @@ alias whats-app='firefox -P W https://web.whatsapp.com/'
 alias telegram='firefox -P TLG https://web.telegram.org/k/'
 alias ports='netstat -nputwc 2>&1 | grep '
 alias u='unset HISTFILE'
+# https://unix.stackexchange.com/a/668030
+# https://salsa.debian.org/meskes/bsdmainutils/-/commit/640967a51c9623362beab94ba6e87f74a9448ca0
+alias cal='ncal -b'
 
 setxkbmap -layout "gb,es"
 setxkbmap -option caps:escape
