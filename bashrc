@@ -147,6 +147,8 @@ then
     cp -f ~/.bash_history ~/.bash_history.BK
 fi
 
+. "$HOME/.cargo/env"
+
 export GOPATH=~/.go
 export PATH=$PATH:~/workspace/golang/go-go1.12.6/bin/:~/.go/bin/
 
