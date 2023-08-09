@@ -149,6 +149,10 @@ fi
 
 . "$HOME/.cargo/env"
 
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 export GOPATH=~/.go
 export PATH=$PATH:~/workspace/golang/go-go1.12.6/bin/:~/.go/bin/
 
