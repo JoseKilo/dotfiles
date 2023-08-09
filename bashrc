@@ -46,6 +46,7 @@ alias play_ocean='play -n -n --combine merge synth pinknoise band -n 1200 1800 t
 alias play_pinknoise='play -c 2 -n synth pinknoise band -n 2500 4000 tremolo 0.03 5 reverb 20 gain'
 alias play_enterprise='play -c2 -n synth whitenoise band -n 100 24 band -n 300 100 gain +20'
 alias whats-app='firefox -P W https://web.whatsapp.com/'
+alias telegram='firefox -P TLG https://web.telegram.org/k/'
 alias ports='netstat -nputwc 2>&1 | grep '
 alias u='unset HISTFILE'
 
