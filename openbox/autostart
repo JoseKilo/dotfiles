@@ -1,14 +1,12 @@
-# volumeicon &
-# nitrogen --restore &
-# tint2 &
-
 export GTK_THEME=Adwaita:dark
 
 (sleep 1s && nitrogen --restore) &
 (sleep 1s && tint2) &
 (sleep 1s && xcompmgr) &
 (sleep 1s && volumeicon) &
-(sleep 1s && keepassx) &
+(sleep 1s && keepassxc) &
 (sleep 1s && blueman-applet) &
 (sleep 1s && redshift -l 51.509865:-0.118092) &
-(sleep 1s && xinput set-prop 13 325 1) &
+(sleep 1s && xinput set-prop 13 348 1) &
+(sleep 1s && xinput set-prop 13 'libinput Tapping Enabled' 1) &
+(sleep 1s && /usr/lib/x86_64-linux-gnu/notify-osd) &
