@@ -160,3 +160,6 @@ eval "$(pyenv init -)"
 export GOPATH=~/.go
 export PATH=$PATH:~/workspace/golang/go-go1.12.6/bin/:~/.go/bin/
 
+GPG_TTY=$(tty)
+export GPG_TTY
+export SSH_AUTH_SOCK="/run/user/$(id -u)/gnupg/S.gpg-agent.ssh"
