@@ -131,7 +131,7 @@ bind "set completion-map-case on"  # Treat hyphens and underscores as equivalent
 bind "set show-all-if-ambiguous on"
 bind "set mark-symlinked-directories on"
 
-export NVM_DIR="/home/merlin/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
